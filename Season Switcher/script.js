@@ -50,7 +50,6 @@ let createAndAppendSeasonContent = () => {
 
     // create season  medium image 
     let createSeasonMediumImage = document.createElement("img");
-    createSeasonMediumImage.classList.add("season-image", "d-inline", "d-md-none");
     createSeasonMediumImage.classList.add("season-image", "d-none", "d-md-inline");
     createSeasonMediumImage.id = "seasonMediumImage";
     seasonsContainerEl.appendChild(createSeasonMediumImage);
@@ -161,3 +160,4 @@ let createAndAppendSeasonContent = () => {
 
 
 createAndAppendSeasonContent(); 
+

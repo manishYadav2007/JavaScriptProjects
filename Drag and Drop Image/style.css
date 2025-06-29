@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #d1fffa;
+    padding: 20px;
+}
+
+.input-file-label {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-content {
+    background-color: #e2eaf3;
+    border: 2px dashed #6c6c6c;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    transition: 0.3s ease;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.file-content:hover {
+    border-color: #2196f3;
+    background-color: #f0f8ff;
+}
+
+.upload-file-img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card-description {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.sub-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+
+
+
+
+#dropImg {
+    height: auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.image-uploaded .card-description,
+.image-uploaded .sub-description {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .img-container {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .upload-file-img {
+        max-width: 100px;
+    }
+
+    .card-description {
+        font-size: 1.1rem;
+    }
+
+    .sub-description {
+        font-size: 0.9rem;
+    }
+}

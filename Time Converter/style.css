@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+.bg {
+    background-image: url('https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png');
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.time-converter-card {
+    background-color: rgba(18, 18, 18, 0.85);
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 420px;
+    display: grid;
+    margin: 10px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    color: #bffd06;
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #f9f9f9;
+    font-weight: 400;
+}
+
+.label-el {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.user-input {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    padding: 0 1rem;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    width: 100%;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #dfff4f;
+    box-shadow: 0 0 6px #dfff4f66;
+}
+
+
+.convert-to-seconds-btn {
+    height: 45px;
+    width: 100%;
+    background-color: #bffd06;
+    border: none;
+    border-radius: 10px;
+    margin-top: 18px;
+    padding: 10px 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.convert-to-seconds-btn:hover {
+    background-color: #b5e427;
+    transform: scale(1.04)
+}
+
+.output-text {
+    color: #31ffba;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+
+
+
+.error-text {
+    color: #ff5757;
+    font-size: 1rem;
+    margin-top: 5px;
+}

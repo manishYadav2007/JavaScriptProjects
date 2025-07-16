@@ -18,14 +18,7 @@ let orderedDetails = [
         itemName: "Veg Roll",
         uniqueNo: 4,
     },
-    {
-        itemName: "Coffee",
-        uniqueNo: 5,
-    },
-    {
-        itemName: "Chicken Burger",
-        uniqueNo: 6,
-    }
+
 ]
 
 

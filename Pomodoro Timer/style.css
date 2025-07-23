@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", Arial, sans-serif;
+}
+
+body {
+    background-color: #b94a49;
+    color: #fff;
+    min-height: 100vh;
+    transition: background-color 0.5s ease-in;
+}
+
+.container {
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+
+.tab {
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .tab.active {
+        background-color: rgba(15, 15, 15, 0.1);
+        color: #fff;
+        border: none;
+        outline: none;
+        }
+        
+        .pomodoro-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            }
+            
+            .start-btn {
+                height: 70px;
+                width: 190px;
+                font-weight: 650;
+                background-color: #fff;
+                color: #b94a49;
+                border: none;
+                border-bottom: 6px solid #ece5e5;
+                border-radius: 5px;
+                font-size: 1.9rem;
+                cursor: pointer;
+                transition: color 0.5s ease-in;
+                outline: none;
+                }
+                
+                .start-btn:active {
+                    outline: none;
+                    }
+                    
+                    
+                    
+                    .timer {
+                        font-size: 6rem;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-bottom: 20px;
+                        }
+                        
+                        .status {
+                            font-size: 1.3rem;
+                            font-weight: 500;
+                            margin-top: 20px;
+                            color: #ffffff;
+                            }
+                            
+                            */
+
+
+@import "tailwindcss";
+
+.pomodoro-container {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.pomodoro-tab {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.active-btn {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px 14px;
+}

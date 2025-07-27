@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-[#e2f9fe] h-screen w-full flex justify-center items-center">
+        <div class="grid grid-cols-1 min-h-[500px] min-w-[600px] bg-[#ffffff] shadow-xl rounded-[19px]">
+            <h2 class="text-[1.9rem] font-[650] text-center py-[1rem]">Password Generator</h2>
+            <div class="flex flex-col  items-center justify-center">
+                <div class="">
+                    <div class="pass-len">
+                        <label for="lengthInput" class="text-[1.3rem] font-[500]">Password Length:</label>
+                        <input type="number" class="border-[2px] border-[solid] border-[#ccc]  p-[8px_12px] mx-[1rem]"
+                            id="lengthInput">
+                    </div>
+                    <div class="include-uppercase">
+                        <input type="checkbox" class="my-[1rem] items-center" id="includeUppercase">
+                        <label for="includeUppercase" class="font-[600] text-[1.3rem] mx-[1rem]">Include
+                            Uppercase</label>
+                    </div>
+                    <div class="include-uppercase">
+                        <input type="checkbox" class="my-[1rem] items-center" id="includeNumbers">
+                        <label for="includeNumbers" class="font-[600] text-[1.3rem] mx-[1rem]">Include
+                            Numbers</label>
+                    </div>
+                    <div class="include-uppercase">
+                        <input type="checkbox" class="my-[1rem] items-center" id="includeLowercase">
+                        <label for="includeLowercase" class="font-[600] text-[1.3rem] mx-[1rem]">Include
+                            Lowercase</label>
+                    </div>
+                </div>
+                <div class="btn-container my-[1rem]">
+                    <button id="generatePassword"
+                        class="transition duration-75 border-[1px] border-solid border-[#0000000] text-[#000000] hover:bg-[#000000] hover:text-[#ffffff]  p-[10px_16px]">Generate
+                        Password</button>
+                    <button id="resetButton"
+                        class="border-[1px] border-solid border-[#0000000] text-[#000000] hover:bg-[#000000] hover:text-[#ffffff] mx-[1rem] p-[10px_16px]">Reset</button>
+                </div>
+
+            </div>
+            <div class="output text-center bg-[#ccc] p-[8px_14px] flex items-center justify-center">
+                <span id="passwordResult" class="text-[1.8rem] font-[600]">Your password will appear here</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

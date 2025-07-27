@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body >
 
     <!-- 
     <div class="bg" id="bgContainer">
@@ -85,26 +85,26 @@
 
 
     <div>
-        <div class="bg-[#b94a49] h-screen w-full flex justify-center items-center" id="bgContainer">
+        <div class="bg-[#b94a49] h-screen w-full flex justify-center items-center" id="backgroundContainer" >
             <div
                 class="grid grid-cols-1 pomodoro-container text-[#ffffff] p-[1rem] max-w-[500px] rounded-[10px] text-center w-full bg-[rgba(255, 255, 255, 0.1)]">
 
                 <!-- Tabs -->
                 <div class="tab-container py-[1rem]">
-                    <button class="tab active-btn text-[1.3rem] py-[1rem] font-[600]"
+                    <button class="tab active-btn text-[1.3rem]  font-[600]"
                         data-target="#pomodoroTabPanel">Pomodoro</button>
-                    <button class="tab text-[1.3rem] py-[1rem] px-[1rem] font-[600]"
+                    <button class="tab text-[1.3rem] py-[1.4rem] px-[1rem] font-[600]"
                         data-target="#shortBreakPanel">Short Break</button>
-                    <button class="tab text-[1.3rem] py-[1rem] font-[600]" data-target="#longBreakPanel">Long
+                    <button class="tab text-[1.3rem]  font-[600]" data-target="#longBreakPanel">Long
                         Break</button>
                 </div>
 
                 <!-- Tab Panels -->
                 <div class="tabs-content">
                     <!-- Pomodoro Tab Panel -->
-                    <div class="pomodoro-tab block rounded-[1rem] md:min-h-full md:p-[1.8rem_2.2rem] py-[1.1rem]"
+                    <div class="pomodoro-tab block rounded-[1rem]  py-[1.1rem]"
                         id="pomodoroTabPanel">
-                        <p class="timer text-[1.9rem] font-[650]" id="pomodoroTimer">05:00</p>
+                        <p class="timer text-[1.9rem] font-[650]" id="pomodoroTimer"></p>
                         <button id="pomodoroStartBtn"
                             class="start-btn bg-[#ffffff] border-b-[4px] border-[#ececec] text-[#b94a49] text-[1.2rem] font-[600] p-[10px_20px] h-[50px] w-[140px]">Start</button>
                     </div>
@@ -126,7 +126,7 @@
 
                 <!-- Status Message -->
                 <div class="status-container py-[1rem]">
-                    <span>Stay focused, you got this</span>
+                    <span id="statusMsg" class="font-[500]">Stay focused, you got this</span>
                 </div>
 
             </div>

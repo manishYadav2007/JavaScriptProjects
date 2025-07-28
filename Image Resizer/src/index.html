@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+
+    <title>Document</title>
+</head>
+
+<body class="bg-slate-900 font-sans flex items-center justify-center min-h-screen p-4">
+    <!-- Main Resizer Card -->
+    <div class="w-full max-w-md bg-slate-800 border border-slate-700 rounded-2xl shadow-2xl p-6 sm:p-8 space-y-6">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-2">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white">Image Resizer</h1>
+            <p  class="text-sm text-[#ff0000] font-medium" id="warningMsg"></p>
+        </div>
+
+        <!-- Image Display Area -->
+        <div class="space-y-4">
+            <div class="bg-slate-900/50 rounded-lg overflow-hidden border border-slate-700 p-4">
+                <img class="h-fit w-full mx-auto rounded-md "
+                    id="widthResizerImage"
+                    src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="Image to be resized">
+            </div>
+            <div class="text-center">
+                <span class="text-sm font-semibold text-slate-400">Current Width: <span
+                        class="text-white" id="imgWidth">280px</span></span>
+            </div>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="bg-slate-700/50 p-4 rounded-lg">
+            <div class="flex items-center justify-center space-x-4">
+                <!-- Decrease Button -->
+                <button
+                    id="decreaseBtn"
+                    class="w-12 h-12 bg-slate-700 text-slate-300 text-3xl font-light rounded-full flex items-center justify-center hover:bg-slate-600 active:bg-slate-500 transition-colors duration-200 shadow-md">
+                    -
+                </button>
+
+                <!-- Size Display -->
+                <div class="text-center">
+                    <span id="imgWidthInterval" class="text-xl font-bold text-white">10px</span>
+                    <p class="text-xs text-slate-400">Step</p>
+                </div>
+
+                <!-- Increase Button -->
+                <button
+                    id="increaseBtn"
+                    class="w-12 h-12 bg-slate-700 text-slate-300 text-3xl font-light rounded-full flex items-center justify-center hover:bg-slate-600 active:bg-slate-500 transition-colors duration-200 shadow-md">
+                    +
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

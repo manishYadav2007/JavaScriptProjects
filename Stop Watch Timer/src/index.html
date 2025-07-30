@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="min-h-screen max-w-full bg-[#0d0d18] flex justify-center items-center flex-col ">
+        <h3 class="text-white md:text-[2.9rem] font-[600] text-[2rem] ">JavaScript Stopwatch</h3>
+        <div>
+            <div
+                class="stop-watch-box bg-[#eeffed] rounded-[1.2rem] min-w-[300px] min-h-[130px] md:min-w-[400px] md:min-h-[160px] my-[1rem] flex items-center flex-col justify-center">
+                <p class="md:text-[2.9rem] text-[2.1rem] font-[600]" id="timerCountdown">00 : 00 : 00</p>
+            </div>
+            <div class="btn-container text-center my-[0.8rem]">
+                <button id="stopButton" class="bg-[#f6d7ff] transition-all duration-100 hover:bg-[#eba1ff] h-[50px] w-full md:h-[50px] md:w-[110px] p-[10px_16px] font-[600] text-[1.2rem]"> Stop</button>
+                <button id="startButton" class="bg-[#cdf3ff] hover:bg-[#7fc9e0] h-[50px] w-full md:h-[50px] md:w-[110px] p-[10px_16px] font-[600] my-[1rem]  text-[1.2rem] md:mx-[1rem]">Start</button>
+                <button id="resetButton" class="bg-[#fffadb] hover:bg-[#dacf86] h-[50px] w-full md:h-[50px] md:w-[110px] p-[10px_16px] font-[600] text-[1.2rem]">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

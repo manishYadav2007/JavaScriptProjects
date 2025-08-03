@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex justify-center flex-col items-center h-screen w-full bg-[#32213d]">
+
+        <main class="w-[70%] h-[500px] position-relative border-[8px] border-solid border-white overflow-hidden rounded-[30px]">
+            <div class="slider-wrapper  flex w-full h-full transition transition-transform  duration-100">
+                <img id="slider1"
+                    src="https://res.cloudinary.com/dyjo8b263/image/upload/v1724769348/pexels-photo-583842_macin0.jpg"
+                    class="slider w-full h-full object-cover flex-shrink-0" alt="">
+                <img id="slider2"
+                    src="https://res.cloudinary.com/dyjo8b263/image/upload/v1724768732/pexels-photo-275033_bjicrr.jpg"
+                    class="slider w-full h-full object-cover flex-shrink-0" alt="">
+                <img id="slider3" src="https://res.cloudinary.com/dyjo8b263/image/upload/v1724746897/Laptop_fuqit6.jpg"
+                    class="slider w-full h-full object-cover flex-shrink-0" alt="">
+                <img id="slider4" src="https://res.cloudinary.com/dyjo8b263/image/upload/v1724159545/cld-sample-5.jpg"
+                    class="slider w-full h-full object-cover flex-shrink-0" alt="">
+            </div>
+        </main>
+        <div class="button-navigation text-center mt-[14px]">
+            <button id="previousBtn" class="text-[1.2rem] h-[40px] w-[130px] hover:bg-[#13ffe0] hover:text-black transition transition-all duration-100  font-[650] bg-transparent border-[2px] rounded-[1rem] text-white border-solid border-[#13ffe0]">Prev</button>
+            <button id="nextBtn" class="text-[1.2rem] h-[40px] w-[130px]  font-[650] bg-transparent border-[2px] rounded-[1rem] text-white border-solid border-[#ff7d4a]"> Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

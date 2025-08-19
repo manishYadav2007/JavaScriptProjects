@@ -96,6 +96,10 @@ tabEl.forEach((eachTab) => {
 
 
 
+
+
+
+
 let totalSeconds = 5 * 60;
 
 
@@ -157,3 +161,9 @@ let pomodoroTabCountdown = () => { //  Define a function to start the pomodoro t
 
 
 pomodoroStartBtnEl.addEventListener("click", () => pomodoroTabCountdown());  //  Add an event listener to the start button
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === " ") {
+        pomodoroTabCountdown();
+    }
+})

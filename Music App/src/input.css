@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+.music-player {
+    background-image: linear-gradient(135deg, #9de0ff, #006391 );
+}
+.circle {
+    background-color: #ffffff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.icon {
+    color: #ff6680;
+}
+
+#musicTimeline {
+    -webkit-appearance: none;
+}
+
+
+#musicTimeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #073d48;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #ffffff;
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+
+
+
+.audio-controls div {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0px 5px 10px rgba(26, 255, 137, 0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    cursor: pointer;
+}
+
+
+
+.audio-controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #073d48;
+    color: #ffffff;
+    transition: background 0.3s ease-in-out;
+}
+
+.controlIcon {
+    transition: background 0.3s ease-in-out;
+}
+
+.controlIcon:hover {
+    background: #e9e5e7;
+    color: #1e1e1e;
+}
+
+
+
+
+@media screen and (max-width: 772px){
+
+}

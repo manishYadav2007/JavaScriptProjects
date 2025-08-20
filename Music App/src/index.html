@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" container max-w-full min-h-screen bg-[#09171a] flex justify-center items-center">
+        <div class="music-player rounded-[25px] max-w-full   p-[25px_35px] text-center">
+
+            <div class=" flex justify-center my-[1.2rem]">
+                <img class="album max-w-[200px] border-[6px] border-[#ffffff] rounded-[50%] shadow" src=""
+                    id="albumImage" alt="">
+            </div>
+            <div>
+                <h3 class="my-[0.7rem] font-[600] text-[1.4rem]" id="songTitle">Despacito</h3>
+                <span class="font-[400] text-[1.2rem]" id="artistName">Luis Fonsi Ft. Puerto Rican</span>
+            </div>
+            <div class="audio-file flex justify-center my-[1rem]">
+                <audio id="audioPlayer">
+                    <source
+                        src="https://res.cloudinary.com/dyjo8b263/video/upload/v1754577463/Baby_Girl_-_Guru_Randhawa_c70mdf.mp3"
+                        type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div>
+                <input type="range" value="100" name=""
+                    class="h-[6px] w-full bg-[#073d48] rounded-[4px] cursor-pointer m-[40px_0px]" id="musicTimeline">
+            </div>
+
+            <div class="audio-controls flex justify-between items-center my-[1rem]">
+
+                <div class="controlIcon">
+                    <i class="fa-solid fa-backward " id="previousSongButton"></i>
+                </div>
+                <div id="playPauseControl">
+                    <i class="fa-solid fa-play" id="contronIcon"></i>
+                </div>
+                <div class="controlIcon">
+                    <i class="fa-solid fa-forward" id="nextSongButton"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

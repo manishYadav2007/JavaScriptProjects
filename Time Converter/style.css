@@ -13,7 +13,7 @@
 .bg {
     background-image: url('https://assets.ccbp.in/frontend/dynamic-webapps/time-converter-bg.png');
     min-height: 100vh;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,9 +28,7 @@
     border-radius: 12px;
     width: 90%;
     max-width: 420px;
-    display: grid;
     margin: 10px 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -63,6 +61,10 @@
     width: 100%;
 }
 
+.user-input::placeholder {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
 
 input:focus {
     outline: none;
@@ -103,4 +105,30 @@ input:focus {
     color: #ff5757;
     font-size: 1rem;
     margin-top: 5px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .label-el {
+        font-size: 0.9rem;
+    }
+
+    .convert-to-seconds-btn {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .user-input::placeholder {
+        font-size: 0.9rem;
+    }
+
 }

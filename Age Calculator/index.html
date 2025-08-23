@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="backgroundContainer">
+        <div class="ageCalculatorCard">
+            <div class="textHeader">
+                <h1 class="ageTitle">Age Calculator</h1>
+                <p class="text">Enter your date of birth to find out your age.</p>
+            </div>
+
+            <div class="ageInputContainer">
+                <label for="dateInput" class="dateInputLabel">Date of Birth</label>
+                <input type="date" class="userDOBInput" id="dateInput">
+            </div>
+            <div class="buttonContainer">
+                <button class="calculateButton" id="submitBtn">Calculate Age</button>
+            </div>
+            
+            <h2 class="title">You are:</h2>
+            <div class="resultContainer">
+                <div class="yearsContainer">
+                    <h3 class="year date" id="dobYear">22</h3>
+                    <span class="yearText">Years</span>
+                </div>
+                <div class="yearsContainer">
+                    <h3 class="month date" id="dobMonth">05</h3>
+                    <span class="yearText">Months</span>
+                </div>
+                <div class="yearsContainer">
+                    <h3 class="days date" id="dobDays">05</h3>
+                    <span class="yearText">Days</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

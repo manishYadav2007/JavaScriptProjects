@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+@import "tailwindcss";
+
+
+
+
+
+
+.image-editor-tool label {
+    font-size: 2.8vmin;
+    color: #2a292a;
+    font-weight: 400;
+}
+
+.image-editor-tool input[type="range"] {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+
+
+.image-editing-result img {
+    display: block;
+    position: relative;
+    max-width: calc(100% - 4vmin);
+    max-height: 45vmin;
+    margin: auto;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.image-editing-result label {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    background-color: #1f66ff;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 5px;
+    font-size: 2.8vmin;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.image-container {
+    /* display: none; */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-slate-500 min-h-screen max-w-full  flex justify-center items-center">
+        <div
+            class="wrapper min-h-[50vmin]  grid md:grid-cols-2 grid-cols-1    w-[85vw] p-[50px_30px] bg-[#ffffff] position-absolute rounded-[0.8px] shadow">
+           
+           
+            <div class="image-editor-tool  justify-around gap-[20px] min-h-[35vmin] flex flex-col ">
+                <div class="filter">
+                    <label for="blur">Blur</label>
+                    <input type="range" min="0" max="5" value="0" step="0.1" id="blur">
+                </div>
+
+                <div class="filter">
+                    <label for="contrast">Contrast</label>
+                    <input type="range" min="0" max="200" value="100" step="0.1" id="contrast">
+                </div>
+
+                <div class="filter">
+                    <label for="hueRotate">Hue Rotate</label>
+                    <input type="range" min="0" max="360" value="0" step="0.1" id="hueRotate">
+                </div>
+
+
+                <div class="filter">
+                    <label for="sepia">Sepia</label>
+                    <input type="range" min="0" max="100" value="0" step="0.1" id="sepia">
+                </div>
+
+
+
+
+                <div class="image-flip-oprtions flex flex-col mt-[10px] ">
+                    <div class="flip-options">
+                        <input type="radio" name="flip" id="no-flip" checked>
+                        <label for="no-flip">No Flip</label>
+                    </div>
+
+                    <div class="flip-options">
+                        <input type="radio" name="flip" id="flip-x-direction">
+                        <label for="flip-x-direction">Flip Horizontally</label>
+                    </div>
+
+                    <div class="flip-options">
+                        <input type="radio" name="flip" id="flip-y-direction">
+                        <label for="flip-y-direction">Flip Vertically</label>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="image-editing-result position-relative flex flex-col justify-center gap-[20px] order-0">
+                <figure class="image-container">
+                    <img id="choseImage" src="https://img.freepik.com/free-photo/cybersecurity-threats-map-with-real-time-pulse-visualization_23-2152001128.jpg?t=st=1754291389~exp=1754294989~hmac=982ff7a5b4595f645e07feff1ff33293f237e375a7b25b51866e4daaf3bc4f9a&w=2000">
+                </figure>
+                <input type="file" class="bg-slate-400 p-[8px_12px] h-[30px ] w-[220px]" name="" id="uploadImageButton" accept="Image/*">
+                <label for="uploadImageButton">Choose An Image</label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

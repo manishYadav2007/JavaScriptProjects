@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://res.cloudinary.com/dyjo8b263/image/upload/v1757831368/sylvester-9293297_1280_hoq5lw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: clamp(300px, 600px, 500px);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+
+#countdown {
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#countdown div {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(4px);
+}
+
+#countdown span {
+    display: block;
+    font-size:  clamp(0.9rem, 3vw, 1.5rem);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.label {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-top: 0.5rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .container {
+        max-width: 80%;
+    }
+
+    #countdown {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 2fr));
+    }
+}
+
+
+
+

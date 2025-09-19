@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg {
+    background: #221d30;
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weather-card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #ffa3a3, #cb3f4b);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search-input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.1rem;
+}
+
+.search-box button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search-box i {
+    font-size: 1.3rem;
+}
+
+
+.weather-icon {
+    width: 170px;
+    margin-top: 1.7rem;
+}
+
+
+
+.weather-container h1 {
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.weather-container h2 {
+    font-size: 2.9rem;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 22px;
+    margin-top: 2.7rem;
+}
+
+
+.weather-column {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.weather-column i {
+    font-size: 2.2rem;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 1.3rem;
+    margin-top: -6px;
+}
+
+
+.error-msg {
+    font-size: 2.4rem;
+    font-weight: 600;
+}

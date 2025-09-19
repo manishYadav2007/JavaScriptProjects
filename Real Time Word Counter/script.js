@@ -185,8 +185,12 @@ let createWordCounterDOM = (wordBtn) => {
             charCount: createCharCounterValue.textContent
         }
 
+
+
         localStorage.setItem("data", JSON.stringify(localStorageData));
-        alert("Your data has been successfully saved to local storage!");
+
+        alert("Your data has been successfully saved!")
+
     })
 
 
@@ -198,7 +202,16 @@ let createWordCounterDOM = (wordBtn) => {
         textareaInput.value = "";
         createWordCounterValue.textContent = "0";
         createCharCounterValue.textContent = "0";
-        alert("Your data has been successfully deleted from local storage!");
+        alert("Your data has been successfully deleted!")
+
+    })
+
+
+    document.getElementById("btn" + btnObject[2].uniqueId).addEventListener("click", () => {
+        let copyText = navigator.clipboard.writeText(textareaInput.value);
+        if (textareaInput.value !== '' && copyText) {
+            alert("Your data has been successfully copied to clipboard!");
+        }
     })
 
 }

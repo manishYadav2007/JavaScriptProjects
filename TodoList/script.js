@@ -1,30 +1,59 @@
 
 const todoItemsContainerElement = document.getElementById("todoItemsContainer");
 const addTodoItemsElement = document.getElementById("addTodoItems");
+const saveButtonElement = document.getElementById("saveButton");
 
 
 
-let todoItems = [
-    {
-        id: 1,
-        text: "Learn HTML"
-    },
-    {
-        id: 2,
-        text: "Learn CSS"
-    },
-    {
-        id: 3,
-        text: "Learn JavaScript"
-    },
-    {
-        id: 4,
-        text: "Learn React"
-    }
-]
+
+
+
+
+let getTodoItemsFromLocalStorage = () => { 
+    let parsedTodoList = JSON.parse(localStorage.getItem("todoItem")); 
+    return parsedTodoList === null ? [] : parsedTodoList;
+}
+
+
+
+
+
+let todoItems = getTodoItemsFromLocalStorage(); 
+
+
+
+
+function onDeleteTodoItems(todoId) {
+    let todoElement = document.getElementById(todoId); 
+
+    todoItemsContainerElement.removeChild(todoElement);
+
+
+    let deleteTodoItem = todoItems.findIndex((eachTodo) => {
+        let eachTodoIds = "todoItem" + eachTodo.id;
+        return eachTodoIds === todoId ? true : false;
+    })
+
+    todoItems.splice(deleteTodoItem, 1);
+
+}
+
 
 
 let todoLength = todoItems.length;
+
+
+
+
+
+saveButtonElement.addEventListener("click", () => {
+    localStorage.setItem("todoItem", JSON.stringify(todoItems));
+    alert("Your Data Successsfully Saved!")
+})
+
+
+
+
 
 
 
@@ -91,8 +120,9 @@ let createAndAppendTodoItem = (todoItem) => {
     createDeleteIconElement.classList.add("far", "fa-trash-alt", "delete-icon");
 
     createDeleteIconElement.addEventListener("click", () => {
-        createListItems.remove();
-    })
+        onDeleteTodoItems(eachTodoItemIds);
+        alert("Your Data Deleted Successfully")
+    }); 
 
 
     deleteIconContainer.appendChild(createDeleteIconElement);
@@ -132,6 +162,7 @@ let addTodoItems = () => {
         text: userEnteredValue
     }
 
+    todoItems.push(newTodoItem); 
     createAndAppendTodoItem(newTodoItem);
     userInput.value = ""; 
 
@@ -143,6 +174,12 @@ let addTodoItems = () => {
 
 
 addTodoItemsElement.addEventListener("click", () => addTodoItems()); 
+
+
+
+
+
+
 
 
 

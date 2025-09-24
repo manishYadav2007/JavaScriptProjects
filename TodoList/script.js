@@ -48,7 +48,7 @@ let todoLength = todoItems.length;
 
 saveButtonElement.addEventListener("click", () => {
     localStorage.setItem("todoItem", JSON.stringify(todoItems));
-    alert("Your Data Successsfully Saved!")
+    alert("Your Data Deleted Successfully")
 })
 
 
@@ -57,11 +57,28 @@ saveButtonElement.addEventListener("click", () => {
 
 
 
-const applyStrikeThroughStyle = (checkBoxIds, labelIds) => {
+const onTodoStatusChange = (checkBoxIds, labelIds, eachTodoItemIds) => {
     const checkBoxElement = document.getElementById(checkBoxIds);
     const labelElement = document.getElementById(labelIds);
 
-    labelElement.classList.toggle("strike-through"); 
+    labelElement.classList.toggle("checked"); 
+
+
+    let todoObjectIndex = todoItems.findIndex((eachTodoElement) => {
+        let eachTodoId = "todoItem" + eachTodoElement.id; 
+
+       return eachTodoId === eachTodoItemIds ? true : false;
+    })
+
+
+
+    let todoObject  = todoItems[todoObjectIndex];
+
+
+
+
+    return todoObject.isChecked === true ? todoObject.isChecked = false : todoObject.isChecked = true;
+
 
 
 }
@@ -91,7 +108,8 @@ let createAndAppendTodoItem = (todoItem) => {
     createCheckBoxElement.setAttribute("type", "checkbox");
     createCheckBoxElement.classList.add("checkbox-input");
     createCheckBoxElement.setAttribute("id", checkBoxIds);
-    createCheckBoxElement.addEventListener("click", () => applyStrikeThroughStyle(checkBoxIds, labelIds));
+    createCheckBoxElement.checked = todoItem.isChecked; 
+    createCheckBoxElement.addEventListener("click", () => onTodoStatusChange(checkBoxIds, labelIds, eachTodoItemIds));
     createListItems.appendChild(createCheckBoxElement);
 
 
@@ -106,7 +124,12 @@ let createAndAppendTodoItem = (todoItem) => {
     createLabelElement.setAttribute("for", checkBoxIds);
     createLabelElement.textContent = todoItem.text;
     createLabelElement.setAttribute("id", labelIds);
+    
     createLabelElement.classList.add("checkbox-label");
+    
+        if (todoItem.isChecked === true) { 
+            createLabelElement.classList.add("checked"); 
+        }
     createLabelContainer.appendChild(createLabelElement);
 
 
@@ -121,7 +144,7 @@ let createAndAppendTodoItem = (todoItem) => {
 
     createDeleteIconElement.addEventListener("click", () => {
         onDeleteTodoItems(eachTodoItemIds);
-        alert("Your Data Deleted Successfully")
+        alert("Your Data Successsfully Deleted!");
     }); 
 
 
@@ -159,7 +182,8 @@ let addTodoItems = () => {
 
     let newTodoItem = {
         id: todoLength,
-        text: userEnteredValue
+        text: userEnteredValue,
+        isChecked: false
     }
 
     todoItems.push(newTodoItem); 
@@ -178,6 +202,12 @@ addTodoItemsElement.addEventListener("click", () => addTodoItems());
 
 
 
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        addTodoItems();
+    }
+})
 
 
 

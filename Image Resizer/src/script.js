@@ -15,7 +15,7 @@ const increaseBtnEl =document.getElementById("increaseBtn");
 
 let defaultWidth = 290;
 let minWidth = 100;
-let maxWidth = 350; 
+let maxWidth = 350;
 
 const maxWidthWarningMsg = "Too big. Decrease the size of the Image.";
 const minWidthWarningMsg = "Can't Visible. Increase the size of the Image.";

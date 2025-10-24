@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Video & Screen Recorder</h1>
+      <p>Choose a source, record, and download your video instantly.</p>
+
+      <div class="video-preview-container">
+        <video id="video-preview" muted autoplay playsinline></video>
+      </div>
+
+      <div class="controls">
+        <button id="share-camera-btn" class="control-btn">
+          <i class="fas fa-camera"></i>Share Camera
+        </button>
+        <button id="share-screen-btn" class="control-btn">
+          <i class="fas fa-desktop"></i>Share Screen
+        </button>
+        <button id="start-record-btn" class="control-btn" disabled>
+          <i class="fas fa-circle"></i>Start Recording
+        </button>
+        <button id="stop-record-btn" class="control-btn" style="display: none">
+          <i class="fas fa-stop"></i>Stop Recording
+        </button>
+      </div>
+
+      <div id="recordings-list">
+        <h3>Your Recordings:</h3>
+        <ul id="download-links">
+          <!-- Download links will appear here -->
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

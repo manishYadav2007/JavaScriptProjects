@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --bg-color: #f4f7f9;
+  --card-bg-color: #ffffff;
+  --primary-text-color: #2c3e50;
+  --secondary-text-color: #7f8c8d;
+  --accent-color: #3498db;
+  --record-color: #e74c3c;
+  --shadow-color: rgba(44, 62, 80, 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--card-bg-color);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--secondary-text-color);
+  margin-bottom: 25px;
+}
+
+.video-preview-container {
+  width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#video-preview {
+  width: 100%;
+  display: block;
+  transform: scaleX(-1); /* Mirror view for camera */
+}
+
+#video-preview.screen {
+  transform: scaleX(1); /* Normal view for screen share */
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.control-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.control-btn i {
+  margin-right: 8px;
+}
+
+#share-camera-btn,
+#share-screen-btn {
+  background-color: var(--accent-color);
+  color: white;
+}
+#share-camera-btn:hover,
+#share-screen-btn:hover {
+  background-color: #2980b9;
+}
+
+#start-record-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#stop-record-btn {
+  background-color: var(--record-color);
+  color: white;
+}
+
+.control-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#recordings-list {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#recordings-list h3 {
+  margin-bottom: 10px;
+}
+
+#recordings-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#recordings-list li a {
+  color: var(--accent-color);
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 5px;
+}
+#recordings-list li a:hover {
+  background-color: #ecf0f1;
+}
